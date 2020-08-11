@@ -1,0 +1,34 @@
+:: variables
+
+/min
+
+SET odrive=%odrive:~0,2%
+
+set backupcmd=xcopy /s /c /d /e /h /i /r /y /g
+
+echo off
+
+%backupcmd% "%USERPROFILE%\pictures" "%drive%\all\My pics"
+
+%backupcmd% "%USERPROFILE%\Favorites" "%drive%\all\Favorites"
+
+%backupcmd% "%USERPROFILE%\videos" "%drive%\all\vids"
+
+%backupcmd% "%USERPROFILE%\Download" "%drive%\all\Download"
+
+%backupcmd% "%USERPROFILE%\Desktop" "%drive%\all\Desktop"
+
+%backupcmd% "%USERPROFILE%\Music" "%drive%\all\Music"
+
+%backupcmd% "%USERPROFILE%\Documents" "%drive%\all\Documents"
+
+%backupcmd% "%USERPROFILE%\Documents" "%drive%\all\C:\"
+
+%backupcmd% "%USERPROFILE%\Documents" "%drive%\all\D:\"
+
+%backupcmd% "%USERPROFILE%\Documents" "%drive%\all\E:\"
+
+%backupcmd% "%USERPROFILE%\Documents" "%drive%\all\F:\"
+
+@echo off 
+
